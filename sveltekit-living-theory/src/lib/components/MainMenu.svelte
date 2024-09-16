@@ -1,5 +1,5 @@
 <nav class="menu column">
-	<p class="menu-label">Część A - <strong>Podstawy</strong></p>
+	<p class="menu-label">Część A - <strong>Podstawy !</strong></p>
 	<ul class="menu-list">
 		<li>
 			<a href="/sample"> Przykład komponentu </a>
