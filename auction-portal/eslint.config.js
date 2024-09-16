@@ -25,7 +25,11 @@ export default [
 			parserOptions: {
 				parser: ts.parser
 			}
+		},
+		rules: {
+			"no-debugger": "error"
 		}
+
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']
