@@ -1,4 +1,12 @@
-<h1>Auction Portal {2 + 3 + 4}</h1>
+<script context="module">
+    console.log('I run only once in app lifetime...')
+</script>
+
+<script>
+    console.log('I am instance !')
+    let myNumber = 20
+</script>
+<h1>Auction Portal {myNumber}</h1>
 
 <div>
     { new Date() }

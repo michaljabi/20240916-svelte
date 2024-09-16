@@ -1,5 +1,10 @@
+<script context="module">
+	import 'bootstrap/dist/css/bootstrap.css'
+</script>
+
 <script lang="ts">
-	import Header from "$lib/components/Header.svelte";
+	
+	import Header from "../lib/components/Header.svelte";
 
 	let x = 256
 	let myTitle = 'To jest tytuł, po najechaniu'
