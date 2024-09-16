@@ -1,0 +1,12 @@
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": [
+    "svelte.svelte-vscode",
+    // dodatkowo:
+    "SimonSiefke.prettier-vscode",
+    "achil.vscode-javascript-repl",
+    "johnpapa.vscode-peacock",
+    "Zignd.html-css-class-completion",
+    "vscode-icons-team.vscode-icons"
+  ]
+}
