@@ -4,6 +4,7 @@
     */
     export let title = 'Auction Portal'
     export let sign = '!'
+    export let luckyNumber = 2;
 
     // Parametr to obiekt i ja mogę go natychmiast zdestrukturyzowac
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
@@ -18,5 +19,5 @@
 
 <header class="mb-2 p-5 bg-warning">
     <!-- svelte-ignore a11y-mouse-events-have-key-events -->
-    <h1 on:mouseover={handleTitleOver}>{title}</h1>
+    <h1 on:mouseover={handleTitleOver} title={String(luckyNumber)} >{title}</h1>
 </header>

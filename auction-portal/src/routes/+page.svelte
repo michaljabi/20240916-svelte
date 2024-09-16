@@ -21,7 +21,7 @@
 
 </script>
 
-<Header sign="👻" /> 
+<Header sign="👻" luckyNumber={9} /> 
 <!-- <Header sign={mySign} /> 
 <Header title="sample hello" />  -->
 <!-- <a href="/auctions" title={myTitle}>Aukcje {x}</a>
