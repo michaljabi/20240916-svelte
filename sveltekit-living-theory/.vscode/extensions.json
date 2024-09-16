@@ -3,7 +3,7 @@
   "recommendations": [
     "svelte.svelte-vscode",
     // dodatkowo:
-    "SimonSiefke.prettier-vscode",
+    "esbenp.prettier-vscode",
     "achil.vscode-javascript-repl",
     "johnpapa.vscode-peacock",
     "Zignd.html-css-class-completion",
