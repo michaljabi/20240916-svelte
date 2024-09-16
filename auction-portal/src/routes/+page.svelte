@@ -1,3 +1,7 @@
-<h1>Auction Portal</h1>
+<script>
+	import Header from "$lib/components/Header.svelte";
 
+</script>
+
+<Header /> 
 <a href="/auctions">Aukcje</a>
