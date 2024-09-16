@@ -1,5 +1,11 @@
-<script>
-	export let someUser = { name: "Unknown", lastName: "" };
+<script lang="ts">
+	interface User {
+    	name: string;
+    	lastName: string;
+	}
+
+	export let someUser: User = { name: "Unknown", lastName: "" };
+
 </script>
 
 <section>

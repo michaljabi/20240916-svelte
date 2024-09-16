@@ -5,8 +5,11 @@
 
 	const someUser = {
 		name: "John",
-		lastName: "Kowalsky"
+		lastName: "Kowalsky",
+		age: 32
 	}
+
+	const title = "h4 title"
 </script>
 
 <h2>Relacja (from) parent (to) child</h2>
@@ -24,5 +27,5 @@
 	<hr />
 	<SampleChild />
 	<hr />
-	<ManyProps title="h4 title" favNumber={99} />
+	<ManyProps {title} favNumber={99} />
 </div>

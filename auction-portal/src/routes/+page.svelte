@@ -3,8 +3,8 @@
 </script>
 
 <script lang="ts">
-	
-	import Header from "../lib/components/Header.svelte";
+  	import MainMenu from '$lib/components/MainMenu.svelte';
+	import Header from "$lib/components/Header.svelte";
 
 	// let x = 256
 	// let myTitle = 'To jest tytuł, po najechaniu'
@@ -22,6 +22,9 @@
 </script>
 
 <Header sign="👻" luckyNumber={9} /> 
+<main class="container">
+	<MainMenu/>
+</main>
 <!-- <Header sign={mySign} /> 
 <Header title="sample hello" />  -->
 <!-- <a href="/auctions" title={myTitle}>Aukcje {x}</a>
