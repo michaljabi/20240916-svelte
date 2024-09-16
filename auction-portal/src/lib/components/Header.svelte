@@ -2,12 +2,13 @@
     /*
         Zadanie: za każdym razem po najechaniu na <h1> dodawaj ! do napisu Auction Portal.
     */
-    let title = 'Auction Portal'
+    export let title = 'Auction Portal'
+    export let sign = '!'
 
     // Parametr to obiekt i ja mogę go natychmiast zdestrukturyzowac
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
     function handleTitleOver({ clientX, clientY }: MouseEvent) {
-        title += '!'
+        title += sign
         //console.log(ev); // dobieram się do natywnego eventu;
         //const { clientX, clientY } = ev;
         console.log(clientX, clientY)

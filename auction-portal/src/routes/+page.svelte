@@ -17,11 +17,13 @@
 	// 	x = 2;
 	// 	myTitle = 'To jest tytuł 3'
 	// }, 3000)
-
+	let mySign = "📦"
 
 </script>
 
-<Header /> 
+<Header sign="👻" /> 
+<!-- <Header sign={mySign} /> 
+<Header title="sample hello" />  -->
 <!-- <a href="/auctions" title={myTitle}>Aukcje {x}</a>
 
 
