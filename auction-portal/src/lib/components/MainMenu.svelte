@@ -3,8 +3,11 @@
 
 	// przedrostek "hanlde" wskazuje że korzystam z tego na widoku jako event-handler
 	// jes to po prostu konwencja nazewnicza (coding standard).
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 	const handleChangeFlag = () => isMenuOpen = !isMenuOpen;
 	// variant2: Mogę to też zapisa tak:
+
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function
 	// function handleChangeFlag (){
 	// 	isMenuOpen = !isMenuOpen
 	// }
