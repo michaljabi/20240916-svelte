@@ -1,4 +1,6 @@
 <script lang="ts">
+	import BasePage from '$lib/components/BasePage.svelte';
+
 	// let x = 256
 	// let myTitle = 'To jest tytuł, po najechaniu'
 	// // debugger; //check in config (not working)
@@ -13,8 +15,10 @@
 	let mySign = '📦';
 </script>
 
-<h2 class="my-4 p-2 border-bottom border-primary">Strona główna</h2>
-<p>pusto tutaj...</p>
+<BasePage title="Strona Główna">
+	<h3 slot="title">tutaj będzie redirect (TODO)</h3>
+	<p>pusto tutaj...</p>
+</BasePage>
 
 <!-- zadanie: przenieś do +layout.svelte -->
 <!-- zdecyduj gdzie będzie <slot /> -->
