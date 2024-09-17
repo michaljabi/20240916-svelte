@@ -1,0 +1,14 @@
+### Get all auctions:
+
+GET http://localhost:5173/api/auctions
+
+
+### Add new auction:
+POST http://localhost:5173/api/auctions
+Content-Type: application/json
+Authorization: Bearer ioh2983y4876893g547c65g8736527483528764
+Cache-Control: no-cache
+
+{
+    "title": "Moja aukcja..."
+}
