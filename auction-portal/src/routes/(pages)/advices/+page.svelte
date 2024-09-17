@@ -1,2 +1,7 @@
-<h2 class="my-4 p-2 border-bottom border-primary">Podpowiadamy</h2>
-<section>...</section>
+<script>
+	import BasePage from "$lib/components/BasePage.svelte";
+
+</script>
+<BasePage title="Podpowiadamy">
+    <section>...</section>
+</BasePage>
