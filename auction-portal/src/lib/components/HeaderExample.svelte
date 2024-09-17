@@ -1,31 +1,32 @@
 <script context="module">
-    console.log('I run only once in app lifetime...')
+	console.log('I run only once in app lifetime...');
 </script>
 
 <script>
-    console.log('I am instance !')
-    let myNumber = 20
+	console.log('I am instance !');
+	let myNumber = 20;
 </script>
+
 <h1>Auction Portal {myNumber}</h1>
 
 <div>
-    { new Date() }
+	{new Date()}
 </div>
 
 <div>
-    { null }
+	{null}
 </div>
 
 <div>
-    { undefined }
+	{undefined}
 </div>
 
 <div>
-    { JSON.stringify({ name: 'Michał '}) }
+	{JSON.stringify({ name: 'Michał ' })}
 </div>
 
 <div>
-    <!-- co by byo jakbym chcia renderowa / interpolowa obiekt ? -->
+	<!-- co by byo jakbym chcia renderowa / interpolowa obiekt ? -->
 </div>
 
 <!-- div[title=hello]>p.article#para -->

@@ -27,9 +27,8 @@ export default [
 			}
 		},
 		rules: {
-			"no-debugger": "error"
+			'no-debugger': 'error'
 		}
-
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/']

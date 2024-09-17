@@ -1,14 +1,6 @@
 <script context="module">
-	import 'bootstrap/dist/css/bootstrap.css'
+	// To jest nasz glejt że cała aplikacja ma zawsze bootstrapa na kazdej stronie.
+	import 'bootstrap/dist/css/bootstrap.css';
 </script>
 
-<script lang="ts">
-    import MainMenu from '$lib/components/MainMenu.svelte';
-    import Header from "$lib/components/Header.svelte";
-</script>
-
-<Header sign="👻" luckyNumber={9} /> 
-<main class="container">
-	<MainMenu/>
-    <slot />
-</main>
+<slot />

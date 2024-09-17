@@ -1,4 +1,5 @@
 # Zadania na start
+
 ## Dzień 2
 
 ### Zadanie #1 | Wszystkie strony w routingu
@@ -9,8 +10,8 @@
 <h2 class="my-4 p-2 border-bottom border-primary">Aukcje</h2>
 <section>
 	<div class="row">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3"></div>
-    </div>
+		<div class="col-12 col-sm-6 col-md-4 col-lg-3"></div>
+	</div>
 </section>
 ```
 
@@ -18,18 +19,14 @@
 
 ```html
 <h2 class="my-4 p-2 border-bottom border-primary">Aukcje na promocji</h2>
-<section>
-  ...
-</section>
+<section>...</section>
 ```
 
 1.3 Dodaj stronę _Podpowiadamy_ oraz jej kod:
 
 ```html
 <h2 class="my-4 p-2 border-bottom border-primary">Podpowiadamy</h2>
-<section>
-  ...
-</section>
+<section>...</section>
 ```
 
 ---
@@ -45,17 +42,19 @@ https://svelte.dev/docs/element-directives#class-name
 
 ```sveltehtml
 ...
-<div class="collapse navbar-collapse" class:show={true}> 
+<div class="collapse navbar-collapse" class:show={true}>
   ...
 </div>
 ...
 ```
+
 spowoduje dodanie klasy `show` do `div.collapse.navbar-collapse`
 
 Z kolei taki zapis:
+
 ```sveltehtml
 ...
-<div class="collapse navbar-collapse" class:show={false}> 
+<div class="collapse navbar-collapse" class:show={false}>
   ...
 </div>
 ...

@@ -1,6 +1,4 @@
 <script lang="ts">
-
-
 	// let x = 256
 	// let myTitle = 'To jest tytuł, po najechaniu'
 	// // debugger; //check in config (not working)
@@ -12,14 +10,11 @@
 	// 	x = 2;
 	// 	myTitle = 'To jest tytuł 3'
 	// }, 3000)
-	let mySign = "📦"
-
+	let mySign = '📦';
 </script>
 
 <h2 class="my-4 p-2 border-bottom border-primary">Strona główna</h2>
-<p>
-	pusto tutaj...
-</p>
+<p>pusto tutaj...</p>
 
 <!-- zadanie: przenieś do +layout.svelte -->
 <!-- zdecyduj gdzie będzie <slot /> -->
