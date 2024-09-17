@@ -1,7 +1,8 @@
+import { getAllAuctions } from '$lib/server/auction.service.js';
 import { json } from '@sveltejs/kit';
 
 export function GET() {
-	return json([]);
+	return json(getAllAuctions());
 }
 
 export async function POST(event) {
