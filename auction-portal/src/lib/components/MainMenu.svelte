@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { faPlus, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+
 	let isMenuOpen = false;
 
 	// przedrostek "hanlde" wskazuje że korzystam z tego na widoku jako event-handler
@@ -63,8 +66,13 @@
 		</ul>
 	</div>
 	<div>
-		<a class="btn btn-primary mx-1 mx-sm-2" href="/add-auction"> Dodaj </a>
-		<a class="btn btn-secondary" href="/cart"> Koszyk ({0}) </a>
+		<a class="btn btn-primary mx-1 mx-sm-2" href="/add-auction">
+			<FontAwesomeIcon icon={faPlus} /> Dodaj
+		</a>
+		<a class="btn btn-secondary" href="/cart">
+			<FontAwesomeIcon icon={faShoppingCart} />
+			Koszyk ({0})
+		</a>
 	</div>
 </nav>
 
