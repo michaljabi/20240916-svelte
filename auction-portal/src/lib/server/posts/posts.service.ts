@@ -1,5 +1,8 @@
 import type { PostDto } from '$lib/model/PostDto';
 
+// to jest wariant gdzie SSR w SvelteKit może działac jako PROXY
+// do naszego finalnie API Java....
+
 export async function getAllPosts(): Promise<PostDto[]> {
 	// const posts: PostDto[] = [];
 	// fetch('https://jsonplaceholder.typicode.com/posts/')
