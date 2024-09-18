@@ -5,10 +5,10 @@ import type { RequestEvent } from '@sveltejs/kit';
 
 const schema = z.object({
 	email: z.string().email(),
-	password: z.string().min(8)
+	password: z.string().min(8),
+	age: z.number()
 });
 
-// @DOC: https://superforms.rocks/get-started#initializing-the-form-in-the-load-function
 
 export const load = async () => {
 	const form = await superValidate(zod(schema));
