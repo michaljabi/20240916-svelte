@@ -3,6 +3,8 @@ import { json } from '@sveltejs/kit';
 
 export function GET() {
 	return json(getAllAuctions());
+	// Symulacja errora z Server side....
+	// return json({ message: 'example error' }, { status: 400 });
 }
 
 export async function POST(event) {

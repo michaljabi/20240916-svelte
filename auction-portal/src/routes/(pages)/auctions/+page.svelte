@@ -6,10 +6,28 @@
 	import { onMount } from 'svelte';
 	// import { getAllAuctions } from '$lib/server/auction.service';
 
+	let errorMessage = '';
+
 	async function callAuctions() {
-		const response = await fetch('/api/auctions');
-		const auctions = await response.json();
-		return auctions;
+		try {
+			const response = await fetch('/api/auctions');
+			if (!response.ok) {
+				// To jest konieczne z każdym razem, bo fetch nie rzuca wyjątku jak serwer odpowiada 400 i wyżej...
+				const error = await response.json();
+				throw new Error(error.message);
+			}
+			const auctions = await response.json();
+			console.log(auctions);
+			return auctions;
+		} catch (e) {
+			// niebezpieczny zapis (asercja typu) // @DOC: ts. -> type assertions
+			// errorMessage = (e as Error).message;
+			if (e instanceof Error) {
+				// @DOC ts. -> instace guard (działa Runtime)
+				errorMessage = e.message;
+			}
+			return [];
+		}
 	}
 
 	let isLoading = true;
@@ -34,6 +52,11 @@
 			{#if isLoading}
 				<div class="col-12">
 					<div class="alert alert-info">Ładuję aukcje...</div>
+				</div>
+			{/if}
+			{#if errorMessage}
+				<div class="col-12">
+					<div class="alert alert-danger">{errorMessage}</div>
 				</div>
 			{/if}
 			{#each myAuctions as auction (auction.id)}
