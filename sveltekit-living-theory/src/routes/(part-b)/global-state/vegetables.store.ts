@@ -8,6 +8,29 @@ interface Veggie {
 // @DOC: https://svelte.dev/docs/svelte-store
 const CTX_VEGGIES = 'CTX_VEGGIES';
 
+
+class VeggieStore {
+
+	private items: Veggie[] = []
+
+	addVegetable(newVegetable: Veggie) {
+		this.items.push(newVegetable)
+	}
+
+	allItems(): readonly Veggie[] {
+		return this.items
+	}
+
+	get itemsCount(): number {
+		return this.items.length;
+	}
+}
+
+const myVeggieStore = new VeggieStore();
+
+// myVeggieStore.items = [];
+myVeggieStore.allItems() //.push({ name: 'TROLL' })
+
 // Łączymy tutaj wszystkie mechanizmy store + kontekst.
 // Tak, aby dowolny komponent mógł skorzystać z tego store.
 // UWAGA: o tym czy będzie to stan globalny decyduje moment, w którym wywołamy createVegetableStore
@@ -23,6 +46,9 @@ export function createVegetableStore(initial: Veggie[]) {
 		addVegetable: (newVegetable: Veggie) => {
 			// to jedyna metoda pozwalająca na modyfikacje przez nasze API
 			items.update((veggies) => [...veggies, newVegetable]);
+		},
+		resetVeggies: () => {
+			items.set([])
 		}
 	};
 
