@@ -62,6 +62,10 @@
 			{/each}
 		</ul>
 	</div>
+	<div>
+		<a class="btn btn-primary mx-1 mx-sm-2" href="/add-auction"> Dodaj </a>
+		<a class="btn btn-secondary" href="/cart"> Koszyk ({0}) </a>
+	</div>
 </nav>
 
 <style>
