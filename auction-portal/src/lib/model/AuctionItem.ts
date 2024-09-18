@@ -3,6 +3,6 @@ export interface AuctionItem {
 	title: string;
 	imgUrl: string;
 	price: number;
-	description: string;
+	description?: string;
 	isPromoted?: boolean;
 }

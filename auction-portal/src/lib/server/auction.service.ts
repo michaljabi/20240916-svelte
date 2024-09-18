@@ -1,11 +1,13 @@
 import type { AuctionItem } from '$lib/model/AuctionItem';
 import dbData from '$lib/server/db-data.json';
 
-export function getAllAuctions() {
-	return dbData.auctions;
+const inMemoryAuctions: AuctionItem[] = dbData.auctions;
+
+export function getAllAuctions(): AuctionItem[] {
+	return inMemoryAuctions;
 }
 
 export function addAuction(auction: AuctionItem) {
-	dbData.auctions.push(auction);
+	inMemoryAuctions.push(auction);
 	return auction;
 }

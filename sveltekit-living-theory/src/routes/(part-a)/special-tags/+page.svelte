@@ -18,6 +18,7 @@
 	<h4><code>@html</code></h4>
 	<blockquote>Interpretacja HTML zapisanego jako string</blockquote>
 	<div>
+		{helloWorld}
 		{@html helloWorld}
 	</div>
 </div>
