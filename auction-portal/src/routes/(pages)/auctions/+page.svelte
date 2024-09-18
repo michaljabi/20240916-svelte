@@ -3,6 +3,7 @@
 	import AuctionCard from './AuctionCard.svelte';
 
 	export let data;
+	export let error;
 
 	// let errorMessage = '';
 </script>
@@ -10,6 +11,7 @@
 <BasePage title="Aukcje">
 	<section>
 		<div class="row">
+			{JSON.stringify(error)}
 			<!-- {#if isLoading}
 				<div class="col-12">
 					<div class="alert alert-info">Ładuję aukcje...</div>
