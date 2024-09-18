@@ -15,7 +15,7 @@ export async function load() {
 	try {
 		callDb();
 	} catch (e: any) {
-		console.log(e);
+		// console.log(e);
 		// error(500, e);
 	}
 
