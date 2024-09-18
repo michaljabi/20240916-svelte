@@ -31,6 +31,11 @@
 	</svelte:fragment> -->
 	<section>
 		<div class="row">
+			{#if isLoading}
+				<div class="col-12">
+					<div class="alert alert-info">Ładuję aukcje...</div>
+				</div>
+			{/if}
 			{#each myAuctions as auction (auction.id)}
 				{@const discountPrice = auction.isPromoted ? '10%' : '0%'}
 
