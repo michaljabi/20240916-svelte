@@ -3,6 +3,8 @@
 	import AuctionCard from './AuctionCard.svelte';
 
 	export let data;
+
+	// let errorMessage = '';
 </script>
 
 <BasePage title="Aukcje">
