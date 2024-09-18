@@ -46,8 +46,8 @@ Dodaj kod:
 Kod pozostałych linków:
 
 ```html
-<a class="btn btn-primary mx-1 mx-sm-2" to="/add-auction"> Dodaj </a>
-<a class="btn btn-secondary" to="/cart"> Koszyk ({0}) </a>
+<a class="btn btn-primary mx-1 mx-sm-2" href="/add-auction"> Dodaj </a>
+<a class="btn btn-secondary" href="/cart"> Koszyk ({0}) </a>
 ```
 
 2.2 Wepnij te storny w routing, analogiczne do pozostałych i przygotuj odpowiadające im tytuły:
